@@ -1,6 +1,6 @@
 export const endpoints = {
-    register: "/api/auth/register",
-    login: "/api/auth/login",
-    getAllProducts: "/api/all-products",
-    getProducts: (categoryId) => `/api/products/${categoryId}`
+    register: "/auth/register",
+    login: "/auth/login",
+    getAllProducts: "/shop/all-products",
+    getProducts: (categoryId) => `/shop/products/${categoryId}`
 }

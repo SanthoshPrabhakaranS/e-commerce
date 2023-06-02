@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const ApiInstance = axios.create({
-    baseURL: process.env.SERVER
-})
+  baseURL: "https://e-commerce-dinh.onrender.com",
+});

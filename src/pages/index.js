@@ -21,7 +21,6 @@ export default function Home() {
       </div>
         <Categories />
         <NewComes />
-        {/* <Contact /> */}
     </main>
   );
 }

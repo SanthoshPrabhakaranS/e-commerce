@@ -23,7 +23,7 @@ const Cart = ({_toggleCart}) => {
     <div className='w-full flex justify-between items-center px-2 border-b border-gray-500 pb-2 text-[1.1rem] font-semibold'>Cart Items(s) <span>{cart.length}</span></div>
     <div className='px-2 flex flex-col gap-3 overflow-y-scroll'>
         { cart.length != 0 ? cart.map((item) => {
-            return <div className='flex flex-row items-center gap-4 relative'>
+            return <div key={item.id} className='flex flex-row items-center gap-4 relative'>
                 <Image src={item.productImage} alt='product-img' width={100} height={100} className='h-[90px] w-[90px] object-cover' />
                 <div>
                     <h1 className='font-semibold'>{item.productName}</h1>
